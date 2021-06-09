@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let user_name;
+        const handsome_guy = 'Phyo Thu Lin';
+        const hair_style = 'THE UNDERCUT';
+        alert(`Check below User Name
+        'Phyo Thu Lin'
+        'Min Min'
+        'Wutt Mong Shwe Yee'
+        'MAL'
+        `)
+        user_name = prompt('Enter Your Name!', '');
+        // if (user_name == 'Phyo Thu Lin') { console.log(`${user_name}, you are hondsome.`) }
+        // else if (user_name == 'Min Min') { console.log(`${user_name} you are hondsome but ${handsome_guy} is more than you :P.`) }
+        // else if (user_name == 'Wutt Mong Shwe Yee') { console.log(`Sorry ${user_name} ${handsome_guy} do not agree to marry you :P.`) }
+        // else if (user_name == 'MAL') { console.log(`${user_name} you are asshole goaway from us.`) }
+        // else { console.log(` ${user_name} let the whole world know that '${handsome_guy}' is the most handsome human being :P`) }
+
+        switch (user_name) {
+            case 'Phyo Thu Lin':
+                console.log(`${user_name}, you are hondsome.`)
+                break;
+            case 'Min Min':
+                console.log(`${user_name} you are hondsome but ${handsome_guy} is more than you :P.`)
+                break;
+            case 'Wutt Mong Shwe Yee':
+                console.log(`Sorry '${user_name}' '${handsome_guy}' do not agree to marry you :P.`)
+                break;
+            case 'MAL':
+                console.log(`${user_name} you are asshole goaway from us.`)
+                break;
+            default:
+                console.log(`${user_name} Let the whole world know that '${handsome_guy}' is the most handsome human being :P`)
+        }
+    </script>
+</body>
+
+</html>
