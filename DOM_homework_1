@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!--before-->
+
+<div>
+<h2>choose your Marital Status</h2>
+<ol  id="martial-stutus">
+  <li>Single</li>
+  <li>Married</li>
+  <li>Do not share</li>
+</ol> 
+</div>
+
+<script>
+    let marital_status= ["Single","Married","Do Not Share"];
+    var doc=document.getElementById("martial-stutus");
+    doc.innerHTML="";
+    
+    for(let i=0;i<3;i++)
+    { 
+            var input_type = document.createElement("INPUT");
+            input_type.setAttribute("type", "radio");
+//          input_type.setAttribute("value", "car");
+            input_type.setAttribute("name", "status");
+            document.body.appendChild(input_type);
+
+            var label = document.createElement("label");
+            label.textContent = marital_status[i];
+            document.body.appendChild(label);
+    }    
+</script>
+
+</body>
+
+</html>
